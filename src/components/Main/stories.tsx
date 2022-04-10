@@ -1,18 +1,13 @@
-import React from 'react'
-
-import { ComponentMeta, ComponentStory } from '@storybook/react'
-
+import { Story, Meta } from '@storybook/react'
 import Main from '.'
 
 export default {
   title: 'Main',
   component: Main
-} as ComponentMeta<typeof Main>
+} as Meta
 
-const Template: ComponentStory<typeof Main> = (args) => <Main {...args} />
-
-export const Primary = Template.bind({})
-Primary.args = {
+export const Basic: Story = (args) => <Main {...args} />
+Basic.args = {
   title: 'React Avançado',
-  description: 'TypeScript, NextJS, ReactJS e Styled Components'
+  description: 'TypeScript, ReactJS, NextJS e Styled Components'
 }
